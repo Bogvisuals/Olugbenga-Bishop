@@ -16,7 +16,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    padding: 20px 60px;
+    padding: 10px 60px;
     background-color: #1e1e1e;
     backdrop-filter: blur(10px);
 }
@@ -26,7 +26,7 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
 }
 
 /* LOGO */
@@ -40,16 +40,16 @@ body {
 
 /* NAV LINKS */
 .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    padding: 8px 14px;
+    /* width: 400px; */
+    padding: 15px 15px;
+    margin-top: 20px;
     background: rgba(255, 255, 255, 0.06);
-    border-radius: 999px;
     backdrop-filter: blur(8px);
+    border-radius: 50px;
 }
 
 .nav-links a {
+    text-align: center;
     text-decoration: none;
     font-size: 15px;
     color: rgba(255, 255, 255, 0.8);
@@ -77,18 +77,6 @@ body {
     padding: 4px 10px;
 }
 
-/* MOBILE NAV */
-
-@media (max-width: 768px) {
-    .nav-links a {
-        display: none;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-}
-
 /* HERO SECTION */
 .hero {
     min-height: 100vh;
@@ -100,6 +88,7 @@ body {
         transparent 1px
     );
     background-size: 20px 20px;
+    margin-top: 30px;
 }
 #more-text {
   display: none;
