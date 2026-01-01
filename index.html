@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bishop Olugbenga</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+  <div class="nav-container">
+    
+    <div class="logo" id="top">
+      Bogvisualz
+    </div>
+
+    <nav class="nav-links">
+        <a href="https://linktr.ee/bogvisualz" target="_blank">Linktree</a>
+        <a href="https://www.behance.net/olugbengabishop" target="_blank">Behance</a>
+        <a href="https://x.com/bogvisualz" target="_blank">X</a>
+        <a href="https://www.instagram.com/bogvisualz" target="_blank">Instagram</a>
+        <a href="#top" id="copr">© Bogvisualz 2025</a>
+        <button class="menu-btn">•••</button>
+    </nav>
+
+  </div>
+</header>
+  <section class="hero">
+    <div class="content">
+
+        <div class="profile">
+            <img src="assests/profile.png" alt="Image">
+        </div>
+
+        <h1>
+            Hi, I'm <span class="highlight">Olugbenga Bishop</span>
+        </h1>
+
+        <p id="bio-text">
+            I am a seasoned creative Designer with over 7 years of experience, weaving digital dreams into reality as a Visual, UI/UX, and Brand Identity Designer, along with amazing skills in Frontend Development, I thrive on the intersection of aesthetics and functionality. I bring a variety of experience to the table having worked on different projects and brands for over 7 years. 
+            <span id="more-text">
+            I specialize in converting concepts into gorgeous and functional designs that rightly aligns with the clients needs. My path entails combining the science of user behavior with the artistic sensibility of design to make sure every pixel has a function. I have welcomed setbacks as chances for development. By being ahead of the curve and constantly honing my craft, I am able to provide innovative solutions that last.
+            </span>
+        </p>
+
+        <button class="read-more-btn" id="readMoreBtn">
+        Read More
+        </button>
+
+    </div>
+  </section>
+
+<script>
+  const readMoreBtn = document.getElementById("readMoreBtn");
+  const moreText = document.getElementById("more-text");
+
+  let isExpanded = false;
+
+  readMoreBtn.addEventListener("click", () => {
+    isExpanded = !isExpanded;
+
+    if (isExpanded) {
+      moreText.style.display = "inline";
+      readMoreBtn.textContent = "Read Less";
+    } else {
+      moreText.style.display = "none";
+      readMoreBtn.textContent = "Read More";
+    }
+  });
+</script>
+
+</body>
+</html>
