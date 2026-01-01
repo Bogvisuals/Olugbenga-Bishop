@@ -16,13 +16,13 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    padding: 16px clamp(20px, 6vw, 80px);
+    padding: 20px 60px;
     background-color: #1e1e1e;
     backdrop-filter: blur(10px);
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -94,7 +94,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 100px;
+    padding: 60px;
     background-image: radial-gradient(
         rgba(255, 255, 255, 0.06) 1px,
         transparent 1px
